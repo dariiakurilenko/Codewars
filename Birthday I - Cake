@@ -1,4 +1,0 @@
-function cake(x, y){
-    let num = y.split('').reduce((sum, current, i) => sum + ((i % 2 == 0)? current.charCodeAt(0): current.charCodeAt(0)-96), 0);
-    return x * 0.7 > num? 'That was close!' : 'Fire!';
-}
