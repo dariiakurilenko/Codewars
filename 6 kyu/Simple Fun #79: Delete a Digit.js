@@ -1,13 +1,11 @@
 function deleteDigit(n) {
     const numStr = n.toString();
-    let maxNum = 0;
+    let arr = []
     
     for (let i = 0; i < numStr.length; i++) {
         const currentNum = parseInt(numStr.slice(0, i) + numStr.slice(i + 1));
-        if (currentNum > maxNum) {
-            maxNum = currentNum;
-        }
+        arr.push(currentNum)
     }
     
-    return maxNum;
+    return Math.max(...arr);
 }
